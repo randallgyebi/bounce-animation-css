@@ -95,3 +95,27 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  to {
+    transform: translate3d(0,400px ,0);
+  }
+}
+
+#box{
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+  background-color: #1a1a1a;
+  position: relative;
+  bottom: 5vh;
+
+  animation: bounce .5s ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+
+}
